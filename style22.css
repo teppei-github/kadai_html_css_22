@@ -1,0 +1,30 @@
+header,
+footer {
+  background-color: coral;
+  color: white;
+  text-align: center;
+}
+#parent {
+  display: flex;
+}
+.contents {
+  width: 30%;
+  border: 1px solid orange;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+
+/* 以下の例では、画面幅が1024px以下のときにスタイルが適用されます */
+@media screen and (max-width: 700px) {
+  #parent {
+    display: block;
+  }
+  /* ここに通常のCSSを書きます。以下は一例です */
+  .contents {
+    width: 100%;
+  }
+}
